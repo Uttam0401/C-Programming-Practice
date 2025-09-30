@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .calculator {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        input {
+            padding: 8px;
+            margin: 10px;
+            width: 200px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor:pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #a04592;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .success {
+            color: #2c3e50;
+        }
+
+        .error {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Factorial Calculator</h1>
+        <input type="number" id="numberInput" placeholder="Enter a non-negative integer">
+        <button onclick="calculateFactorial()">Calculate</button>
+        <div id="result" role="alert" aria-live="polite"></div>
+    </div>
+
+    <script>
+        function calculateFactorial() {
+            const numberInput = document.getElementById('numberInput');
+            const resultDiv = document.getElementById('result');
+            const n = parseFloat(numberInput.value);
+
+            // Clear previous results
+            resultDiv.className = '';
+            
+            // Validation
+            if (isNaN(n)) {
+                resultDiv.textContent = "Please enter a valid number";
+                resultDiv.classList.add('error');
+                return;
+            }
+
+            if (n < 0) {
+                resultDiv.textContent = "Factorial is not defined for negative numbers";
+                resultDiv.classList.add('error');
+                return;
+            }
+
+            if (!Number.isInteger(n)) {
+                resultDiv.textContent = "Please enter an integer";
+                resultDiv.classList.add('error');
+                return;
+            }
+
+            // Calculate factorial
+            let factorial = 1;
+            for (let i = 2; i <= n; i++) {
+                factorial *= i;
+            }
+
+            // Display result
+            resultDiv.textContent = `${n}! = ${factorial.toLocaleString()}`;
+            resultDiv.classList.add('success');
+        }
+
+        // Add event listener to clear result when typing
+        document.getElementById('numberInput').addEventListener('input', function() {
+            document.getElementById('result').textContent = '';
+        });
+    </script>
+</body>
+</html>
