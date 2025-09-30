@@ -1,0 +1,17 @@
+//Write a program to enter two numbers and print the quotient and remainder.
+#include<stdio.h>
+#include<conio.h>
+   int main()
+   {
+    int a,b,quotient,remainder;
+    printf("Enter The Value Of First Number:-");
+    scanf("%d",&a);
+    printf("Enter The Value Of Second Number:-");
+    scanf("%d",&b);
+    quotient = a/b;
+    remainder = a%b;
+    printf("Quotient Of Two Numbers=%d",quotient);
+    printf("\nRemainder Of Tho Numbers=%d",remainder);
+    return 0;
+    
+   }

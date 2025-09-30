@@ -1,0 +1,15 @@
+//Write a program to enter two floating point numbers and print the product of those two numbers.
+#include<stdio.h>
+#include<conio.h>
+   int main()
+   {
+    float a,b,Product;
+    printf("Enter The Value Of First Number:-");
+    scanf("%f",&a);
+    printf("Enter The Value Of Second Number:-");
+    scanf("%f",&b);
+    Product = a+b;
+    printf("Product Of Two Numbers=%f",Product);
+    return 0;
+    
+   }

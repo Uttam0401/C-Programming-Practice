@@ -1,0 +1,12 @@
+//Write a program to enter a number and print the cube of that number.
+#include<stdio.h>
+#include<conio.h>
+   int main()
+   {
+    int a,cube;
+    printf("Enter The Number:-");
+    scanf("%d",&a);
+    cube = a*a*a;
+    printf("Cube Of The Given Numbers=%d",cube);
+    return 0;
+   }

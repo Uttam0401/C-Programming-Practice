@@ -1,0 +1,15 @@
+//Write a program to enter the length and width of a rectangle and calculate the area and perimeter.
+#include<stdio.h>
+  int main()
+  {
+    int length,width,area,perimeter;
+    printf("Enter The Value Of Length:- ");
+    scanf("%d",&length);
+    printf("Enter The Value Of Width:- ");
+    scanf("%d",&width);
+    area=length*width;
+    perimeter=(length+width)*2;
+    printf("Area Of Rectangle:-%d",area);
+    printf("\nPerimeter Of Rectangle:-%d",perimeter);
+    return 0;
+  }

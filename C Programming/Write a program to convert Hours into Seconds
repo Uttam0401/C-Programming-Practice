@@ -1,0 +1,14 @@
+//Write a program to convert Hours into Seconds.
+#include<stdio.h>
+  int main()
+  
+  {
+    int hour,seconds;
+    printf("Enter The Hour Those You Want To Convert In Seconds0:-");
+    scanf("%d",&hour);
+    // 1 Hour = 60 min and and 1 Min = 60 second 1 hour= 3600
+    seconds = hour*3600;
+    printf("The Given Input Are Convert In Second =%d",seconds);
+
+    return 0;
+  }

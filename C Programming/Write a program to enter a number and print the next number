@@ -1,0 +1,13 @@
+//Write a program to enter a number and print the next number.
+#include<stdio.h>
+ int main()
+ {
+    int a,next;
+    printf("Enter The First Numbers:-");
+    scanf("%d",&a);
+
+    next = a+1;
+    printf("The Next Number Of The Given Input Is=%d",next);
+
+    return 0;
+ }

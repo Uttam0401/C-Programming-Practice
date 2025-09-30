@@ -1,0 +1,12 @@
+//Write a program to convert Minute to Seconds.
+#include<stdio.h>
+  int main()
+  {
+    int minute,seconds;
+    printf("Enter The Number In Minutes:-");
+    scanf("%d",&minute);
+    seconds = minute*60;
+    printf("Converting Minutes In Seconds=%d",seconds);
+    return 0;
+  }
+  

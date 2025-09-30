@@ -1,0 +1,12 @@
+//Write a program to enter a number and print the square of that number.
+#include<stdio.h>
+#include<conio.h>
+   int main()
+   {
+    int a,square;
+    printf("Enter The Number:-");
+    scanf("%d",&a);
+    square = a*a;
+    printf("Square Of The Given Numbers=%d",square);
+    return 0;
+   }

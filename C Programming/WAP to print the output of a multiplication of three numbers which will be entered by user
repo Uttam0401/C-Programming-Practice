@@ -1,0 +1,14 @@
+// WAP to that takes three numbers (x,y,z) as input and print the output of (x+y).z and x.y+y.z;
+#include<stdio.h>
+#include<conio.h>
+   int main()
+   {
+    int x=10,y=5,z=6,x.y+y.z,x+y.z;
+   x+y.z=x+y*z;
+   x.y+y.z=x*y+y*z;
+   printf("the value of (x+y).z :") ;
+   printf("the value of x.y+y.z :");
+   getch();
+
+   }
+    

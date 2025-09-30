@@ -1,0 +1,17 @@
+//Write a program to enter two numbers and swap them. Print the changed values.
+#include<stdio.h>
+#include<conio.h>
+  int main()
+  {
+    int a,b,c;
+    printf("Enter The Value Of a:-");
+    scanf("%d",&a);
+    printf("Enter The Value Of b:-");
+    scanf("%d",&b);
+    printf("swaping the value before a%d and b%d",a,b);
+    c=a;
+    a=b;
+    b=c;
+    printf("\nafter the swaping the value a=%d and b=%d",a,b);
+    return 0;
+  }

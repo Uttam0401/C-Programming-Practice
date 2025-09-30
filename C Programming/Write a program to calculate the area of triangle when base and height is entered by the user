@@ -1,0 +1,13 @@
+//Write a program to calculate the area of triangle when base and height is entered by the user.
+#include<stdio.h>
+   int main()
+   {
+    int base,height,area;
+    printf("Enter The Value Of Base:-");
+    scanf("%d",&base);
+    printf("Enter The Value Of Height:-");
+    scanf("%d",&height);
+    area=base*height*1/2;
+    printf("Area Of Triangle Is=%d",area);
+    return 0;
+   }

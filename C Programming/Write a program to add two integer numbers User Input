@@ -1,0 +1,15 @@
+//Write a program to add two integer numbers User Input.
+#include<stdio.h>
+#include<conio.h>
+   int main()
+   {
+    int a,b,sum;
+    printf("Enter The Value Of First Number:-");
+    scanf("%d",&a);
+    printf("Enter The Value Of Second Number:-");
+    scanf("%d",&b);
+    sum = a+b;
+    printf("Addition Of Two Numbers=%d",sum);
+    return 0;
+    
+   }

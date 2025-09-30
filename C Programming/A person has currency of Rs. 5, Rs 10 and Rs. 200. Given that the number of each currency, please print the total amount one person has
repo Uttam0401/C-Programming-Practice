@@ -1,0 +1,16 @@
+//A person has currency of Rs. 5, Rs 10 and Rs. 200. Given that the number of each currency, please print the total amount one person has.
+#include<stdio.h>
+#include<conio.h>
+  int main()
+  {
+    int total_amount,five,ten,twohundred;
+    printf("Total Numbers of Rs.5: ");
+    scanf("%d",&five);
+     printf("Total Numbers of Rs.10: ");
+    scanf("%d",&ten);
+     printf("Total Numbers of Rs.200: ");
+    scanf("%d",&twohundred);
+    total_amount=five*5+ten*10+twohundred*200;
+    printf("Total Amount of a person has=%d",total_amount);
+    getch();
+  }

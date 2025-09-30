@@ -1,0 +1,11 @@
+//Write a program that takes an age (for example 20) as input and prints “You do not look like 20”.
+#include<stdio.h>
+#include<conio.h>
+  int main()
+  {
+    int age;
+    printf("Enter The Value Of Age:-");
+    scanf("%d",&age);
+    printf("You Do Not look Like %d",age);
+    return 0;
+  }

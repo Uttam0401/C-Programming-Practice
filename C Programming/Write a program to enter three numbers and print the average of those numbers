@@ -1,0 +1,20 @@
+//Write a program to enter three numbers and print the average of those numbers.
+#include<stdio.h>
+#include<conio.h>
+   int main()
+   {
+    int a,b,c,sum;
+    float average;
+    printf("Enter The Value Of First Number:-");
+    scanf("%d",&a);
+    printf("Enter The Value Of Second Number:-");
+    scanf("%d",&b);
+    printf("Enter The Value Of The Third Number:-");
+    scanf("%d",&c);
+    sum = a+b+c;
+    printf("Addition Of Three Numbers=%d",sum);
+    average = sum/3;
+    printf("\nAverage Of Three Numbers=%f",average);
+    return 0;
+    
+   }
